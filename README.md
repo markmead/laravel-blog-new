@@ -4,6 +4,10 @@
 
 Passing `-m` when creating a model will create the migration for it
 
+### Controller
+
+Passing `--resource` when creating a controller will scaffold out the CRUD methods
+
 ### Huh? 🤔
 
 Parts of Laravel that throw me
@@ -38,3 +42,7 @@ Isn't this an object?
 ### Questions
 
 #### Can you use arrow functions `() =>` instead of having to write `function()` for nameless functions
+
+### Tutorial
+
+[Learn Laravel](https://youtu.be/EcYXsp78Xy8?t=5167)
