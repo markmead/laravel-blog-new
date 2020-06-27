@@ -1,5 +1,9 @@
 ### Laravel Blog
 
+### Model
+
+Passing `-m` when creating a model will create the migration for it
+
 ### Huh? 🤔
 
 Parts of Laravel that throw me
