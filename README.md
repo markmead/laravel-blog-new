@@ -41,7 +41,7 @@ Isn't this an object?
 
 ### Questions
 
-#### Can you use arrow functions `() =>` instead of having to write `function()` for nameless functions
+**Can you use arrow functions `() =>` instead of having to write `function()` for nameless functions?**
 
 ### Tutorial
 
