@@ -12,6 +12,10 @@ Passing `--resource` when creating a controller will scaffold out the CRUD metho
 
 You don't have to restart the server when adding routes 😱
 
+### Tinker
+
+Equivalent of Rails console
+
 ### Huh? 🤔
 
 Parts of Laravel that throw me
@@ -42,6 +46,22 @@ array(
 ```
 
 Isn't this an object?
+
+#### Colons
+
+This will error
+
+```php
+$post->save()
+```
+
+This will work
+
+```php
+$post->save();
+```
+
+All because of the `;` which appears to be required for everything
 
 ### Questions
 
