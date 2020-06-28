@@ -47,6 +47,8 @@ Isn't this an object?
 
 **Can you use arrow functions `() =>` instead of having to write `function()` for nameless functions?**
 
+**Should validation happen in the controller? In Rails it's preffered to handle validation logic in the model**
+
 ### Tutorial
 
 [Learn Laravel](https://youtu.be/EcYXsp78Xy8?t=5167)
