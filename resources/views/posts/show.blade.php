@@ -2,7 +2,8 @@
 
 @section('content')
   <a href="/posts" class="btn btn-outline-secondary">Go back</a>
-  <h1>{{ $post->title }}</h1>
-  <p>{{ $post->created_at }}</p>
+  <h1 class="mt-4">{{ $post->title }}</h1>
+  <small>{{ $post->created_at }}</small>
+  <hr>
   <div>{{ $post->body }}</div>
 @endsection

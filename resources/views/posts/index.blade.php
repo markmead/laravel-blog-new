@@ -2,10 +2,10 @@
 
 @section('content')
 <h1>Posts</h1>
+<a class="btn btn-primary" href="{{ url('/posts/create') }}">{{ __('Create post') }}</a>
 
 @if(count($posts) > 0)
-<div class="container-fluid">
-  <div class="row">
+  <div class="row mt-4">
     @foreach ($posts as $post)
       <div class="col-sm">
         <div class="card">
@@ -18,6 +18,5 @@
       </div>
     @endforeach
   </div>
-</div>
 @endif
 @endsection
