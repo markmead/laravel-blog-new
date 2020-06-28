@@ -8,6 +8,10 @@ Passing `-m` when creating a model will create the migration for it
 
 Passing `--resource` when creating a controller will scaffold out the CRUD methods
 
+### Routes
+
+You don't have to restart the server when adding routes 😱
+
 ### Huh? 🤔
 
 Parts of Laravel that throw me
