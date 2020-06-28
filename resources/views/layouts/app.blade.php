@@ -44,6 +44,9 @@
                       <li class="nav-item">
                         <a class="nav-link" href="{{ url('/services') }}">{{ __('Services') }}</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/posts') }}">{{ __('Blog') }}</a>
+                      </li>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
