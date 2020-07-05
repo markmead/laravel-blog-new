@@ -38,16 +38,7 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-          'title' => 'required',
-          'body' => 'required'
-        ]);
-
-        $post = new Post;
-        $post->title = $request->input('title');
-        $post->body = $request->input('body');
-        $post->save();
-
+        $this->validateAndSavePost($request, null);
         return redirect('/posts')->with('success', 'Post was created! 🎉');
     }
 
@@ -84,16 +75,7 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request, [
-          'title' => 'required',
-          'body' => 'required'
-        ]);
-
-        $post = Post::find($id);
-        $post->title = $request->input('title');
-        $post->body = $request->input('body');
-        $post->save();
-
+        $this->validateAndSavePost($request, $id);
         return redirect('/posts')->with('success', 'Post was update! 🎉');
     }
 
@@ -108,5 +90,19 @@ class PostsController extends Controller
         $post = Post::find($id);
         $post->delete();
         return redirect('/posts')->with('success', 'Post was deleted! 🎉');
+    }
+
+    private function validateAndSavePost($request, $id)
+    {
+        $this->validate($request, [
+          'title' => 'required',
+          'body' => 'required'
+        ]);
+
+        $post = isset($id) ? Post::find($id) : new Post;
+
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->save();
     }
 }
