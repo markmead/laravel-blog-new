@@ -39,13 +39,13 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/about') }}">{{ __('About') }}</a>
+                            <a class="nav-link" href="/about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/services') }}">{{ __('Services') }}</a>
+                            <a class="nav-link" href="/services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/posts') }}">{{ __('Blog') }}</a>
+                            <a class="nav-link" href="/posts">Posts</a>
                         </li>
                         <!-- Authentication Links -->
                         @guest
@@ -82,7 +82,6 @@
         </nav>
 
         <main class="py-4 container">
-            @include('inc.message')
             @yield('content')
         </main>
     </div>
