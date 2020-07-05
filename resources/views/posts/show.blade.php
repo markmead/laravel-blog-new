@@ -8,4 +8,7 @@
     <div>{{ $post->body }}</div>
     <hr>
     <a href="/posts/{{ $post->id }}/edit" class="btn btn-secondary">Edit</a>
+    {!! Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'DELETE']) !!}
+        {{ Form::submit('Delete', ['class' => 'btn btn-danger']) }}
+    {!! Form::close() !!}
 @endsection

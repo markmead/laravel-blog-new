@@ -13,7 +13,6 @@
                         <h5 class="card-title">{{  $post->title  }}</h5>
                         <p class="card-text">{{  $post->created_at  }}</p>
                         <a href="/posts/{{ $post->id }}" class="btn btn-primary">Read more</a>
-                        {{-- <a href="/posts/{{ $post->id }}" method="destroy" class="btn btn-danger">Delete post</a> --}}
                     </div>
                 </div>
             </div>
