@@ -7,7 +7,7 @@
 @if(count($posts) > 0)
     <div class="row mt-4">
         @foreach ($posts as $post)
-            <div class="col-sm">
+            <div class="col col-md-3 col-lg-4 pt-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">{{  $post->title  }}</h5>
