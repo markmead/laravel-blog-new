@@ -38,15 +38,15 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/about') }}">{{ __('About') }}</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/services') }}">{{ __('Services') }}</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/posts') }}">{{ __('Blog') }}</a>
-                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/about') }}">{{ __('About') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/services') }}">{{ __('Services') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/posts') }}">{{ __('Blog') }}</a>
+                        </li>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">

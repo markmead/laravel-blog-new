@@ -15,9 +15,9 @@ class PostsController extends Controller
      */
     public function index()
     {
-      // $posts = DB::select('SELECT * FROM posts');
-      $posts = Post::orderBy('created_at', 'desc')->get();
-      return view('posts.index')->with('posts', $posts);
+        // $posts = DB::select('SELECT * FROM posts');
+        $posts = Post::orderBy('created_at', 'desc')->get();
+        return view('posts.index')->with('posts', $posts);
     }
 
     /**
@@ -27,7 +27,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-      return view('posts.create');
+        return view('posts.create');
     }
 
     /**
@@ -38,17 +38,17 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-      $this->validate($request, [
-        'title' => 'required',
-        'body' => 'required'
-      ]);
+        $this->validate($request, [
+          'title' => 'required',
+          'body' => 'required'
+        ]);
 
-      $post = new Post;
-      $post->title = $request->input('title');
-      $post->body = $request->input('body');
-      $post->save();
+        $post = new Post;
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->save();
 
-      return redirect('/posts')->with('success', 'Post was created! 🎉');
+        return redirect('/posts')->with('success', 'Post was created! 🎉');
     }
 
     /**
@@ -59,8 +59,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-      $post = Post::find($id);
-      return view('posts.show')->with('post', $post);
+        $post = Post::find($id);
+        return view('posts.show')->with('post', $post);
     }
 
     /**
