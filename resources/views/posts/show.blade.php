@@ -6,4 +6,6 @@
     <small>{{ $post->created_at }}</small>
     <hr>
     <div>{{ $post->body }}</div>
+    <hr>
+    <a href="/posts/{{ $post->id }}/edit" class="btn btn-secondary">Edit</a>
 @endsection
